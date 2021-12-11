@@ -1,0 +1,54 @@
+.body{
+  width:100%;
+}
+.conf_head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:20px;
+}
+.back{
+  position: absolute;  
+  left: 0; 
+  text-decoration: none;
+  color:black;
+  margin-left:15px;
+  font-size: 40px;
+}
+.conf{
+  width:80%;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.conf_Sentence{
+  width:80%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.button{
+  width:40%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.cancel input{
+  width:100px;
+}
+.withdrawal input{
+  width:100px;
+}

@@ -1,0 +1,55 @@
+.camp_site_head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back{
+  position: absolute;  
+  left: 0; 
+  font-size: 40px;
+  text-decoration: none;
+  color:black;
+  margin-left:15px;
+}
+.info{
+  text-align: center;
+}
+.campsite_info{
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  border:1px solid black;
+  border-radius: 10px;
+  height:150px;
+  width:80%;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+ul{
+  display: flex;
+  list-style: none;
+  font-size: 10px;
+  flex-wrap: wrap;
+  padding:0;
+  width:120px;
+  justify-content: center;
+}
+.result{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border-top:1px solid black;
+  margin: 0 calc(50% - 50vw);
+  width: 100vw;
+}
+.result p{
+  text-align: center;
+}
+

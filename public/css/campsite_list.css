@@ -1,0 +1,74 @@
+body{
+  background-image: url("../img/IMG_1696.jpeg");
+  background-size:auto;
+  background-blend-mode:lighten;
+  background-position:center; 
+}
+
+.camp_site_head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back{
+  position: absolute;  
+  left: 0; 
+  font-size: 40px;
+  text-decoration: none;
+  color:black;
+  margin-left:15px;
+}
+.register{
+  position: absolute;  
+  right: 0; 
+  text-decoration: none;
+  margin-left:15px;
+}
+.info{
+  text-align: center;
+}
+.campsite_info{
+  background-color:rgba(223, 224, 224, 0.5);
+  background-blend-mode:lighten;
+  border:1px solid rgb(114, 129, 114);
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  border:1px solid black;
+  border-radius: 10px;
+  height:150px;
+  width:80%;
+  margin:0 auto;
+  margin-top:50px;
+}
+ul{
+  display: flex;
+  list-style: none;
+  font-size: 10px;
+  flex-wrap: wrap;
+  padding:0;
+  width:120px;
+  justify-content: center;
+}
+.image{
+width:200px;
+height:120px;
+}
+.image img{
+  width:100%;
+  height:100%;
+  border-radius: 10px;
+}
+.detail{
+  font-size: 5px;
+  text-decoration: none;
+  color:black;
+}
+.edit_delete{
+  width:80%;
+  margin:0 auto;
+  text-align: right;
+}
+
+
+

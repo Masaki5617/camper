@@ -1,0 +1,73 @@
+body{
+  background-color:rgba(205, 235, 245, 0.5);
+  background-blend-mode:lighten;
+  background-position:center; 
+}
+.login{
+  text-align: center;
+}
+.login_head{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.user_id{
+  width:100%;
+}
+.txt{
+  width:100%;
+  box-sizing: border-box;
+  height:30px;
+  margin-top:30px;
+}
+.submit{
+  text-align: center;
+  width:100%;
+  margin-top:20px;
+}
+.input_login{
+  width:300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.pass_Reset a{
+  display: inline-block;
+  text-align: center;
+  width:100%;
+  font-size: 10px;
+  color:black;
+}
+.text{
+  margin: 0 calc(50% - 50vw);
+  width: 100vw;
+  color:black;
+}
+h5{
+  text-align: center;
+  border-top:1px solid rgb(167, 167, 163);
+}
+.register{
+  display: inline-block;
+  text-align: center;
+  width:100%;
+  border: 1px solid ;
+  text-decoration: none;
+  color:black;
+  margin-top:20px;
+  background-color: white;
+}
+.admin_login a{
+  text-decoration: none;
+  margin-top:60px;
+  display: inline-block;
+  text-align: center;
+  width:100%;
+  color: black;
+}
+.error{
+  color:red;
+}

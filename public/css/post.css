@@ -1,0 +1,69 @@
+body{
+  background-color:rgba(192, 234, 247, 0.5);
+  background-blend-mode:lighten;
+  background-position:center; 
+}
+.customer_review_head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back{
+  position: absolute;  
+  left: 0; 
+  font-size: 40px;
+  text-decoration: none;
+  color:black;
+  margin-left:15px;
+}
+.post{
+ text-align: center;
+}
+.star{
+  text-align: center;
+  font-size: 40px;
+}
+.title{
+  margin:0 auto;
+  margin-bottom:30px;
+  width:80%;
+  padding:20px;
+}
+.title input{
+  width:100%;
+  height:50px;
+}
+.title p{
+  text-align: center;
+}
+.review{
+  margin-bottom:30px;
+  width:80%;
+  margin:0 auto;
+}
+.review input{
+  width:100%;
+  height:150px;
+}
+.review p{
+  text-align: center;
+}
+.post_button {
+ text-align: center;
+ margin-top:50px;
+}
+.post_button input{
+  width:80px;
+  height:30px;
+}
+.err{
+  color:red;
+}
+.duplicate p{
+  font-size: 20px;
+}
+.textarea{
+  width:100%;
+  height:200px;
+}
+

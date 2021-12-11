@@ -1,0 +1,317 @@
+
+@media screen and (min-width:479px){
+body{
+  background-image: url("../img/IMG_1696.jpeg");
+  background-size:auto;
+  background-blend-mode:lighten;
+  background-position:center; 
+}
+.head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:20px;
+}
+.head img{
+  width:50px;
+}
+.logo{
+  position: absolute;  
+  left: 0; 
+  text-decoration: none;
+  color:black;
+  margin-left:15px;
+}
+.mypage{
+  position: absolute;  
+  right: 0; 
+  text-decoration: none;
+  color:blue;
+  margin-right:3%;
+}
+
+article{
+  display: flex;
+  justify-content: center;
+  height:300px;
+  width:100%;
+  position: relative;
+}
+.search {
+  background-color:rgba(223, 224, 224, 0.5);
+  background-blend-mode:lighten;
+  border:1px solid rgb(114, 129, 114);
+  width:20%;
+  height:400px;
+  text-align:center;
+  position: relative;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+.search select{
+  width:80%;
+  margin-bottom:20px;
+  margin-top:20px;
+}
+.search_button{
+  text-decoration: none;
+  position: absolute;
+  bottom:0;
+  width:100%;
+  text-align: center;
+  text-decoration: none;
+}
+.search_button a{
+  text-decoration: none;
+}
+.search input{
+  border-radius: 10px;
+  margin-bottom:10px;
+}
+
+.campsite_info{
+  background-color:rgba(223, 224, 224, 0.5);
+  background-blend-mode:lighten;
+  display: flex;
+  align-items: center;
+  border:1px solid rgb(114, 129, 114);
+  width:70%;
+  height:50%;
+  margin-left:20px;
+  margin-bottom:20px;
+  justify-content: center;
+  width:95%;
+  font-weight: bolder;
+  border-radius: 5px;
+}
+.campsite_info img{
+  width:80%;
+  height:80%;
+  margin-left:15px;
+  border-radius: 10px;
+}
+.info{
+  text-align: right;
+  margin-left:20px;
+  width:30%;
+}
+.institution{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:15px;
+}
+
+.institution p{
+  font-size: 20px;
+  font-weight: bolder;
+}
+.detail{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color:black;
+}
+.detail a{
+  font-size: 5%;
+  text-decoration: none;
+  margin-left:5px;
+}
+p{
+  text-align: center;
+  font-size: 5%;
+}
+ul{
+  display: flex;
+  list-style: none;
+  font-size: 5%;
+  flex-wrap: wrap;
+  padding:0;
+  width:100%;
+  justify-content:center;
+  font-weight: bolder;
+}
+.main{
+  width:80%;
+}
+.image img{
+  width:200px;
+  height:100px;
+} 
+.check_button{
+  margin-top:50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.check_button1{
+  margin-top:50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.check_button1{
+  display: flex;
+  align-items: center;
+}
+.error {
+  color:red;
+}
+.err{
+  font-size:15px;
+}
+.category{
+  margin-bottom:35px;
+}
+
+}
+
+@media screen and (max-width:480px){
+  body{
+    background-image: url("../img/IMG_1696.jpeg");
+    background-size:auto;
+    background-blend-mode:lighten;
+    background-position:center; 
+  }
+  .head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+  }
+  .head img{
+    width:50px;
+  }
+  .logo{
+    position: absolute;  
+    left: 0; 
+    text-decoration: none;
+    color:black;
+    margin-left:15px;
+  }
+  .mypage{
+    position: absolute;  
+    right: 0; 
+    text-decoration: none;
+    color:blue;
+    margin-right:3%;
+  }
+  
+  article{
+    display: flex;
+    justify-content: center;
+    height:300px;
+    width:100%;
+    position: relative;
+  }
+  .search {
+    background-color:rgba(223, 224, 224, 0.5);
+    background-blend-mode:lighten;
+    border:1px solid rgb(114, 129, 114);
+    width:20%;
+    height:400px;
+    text-align:center;
+    position: relative;
+    border-radius: 5px;
+    font-weight: bolder;
+  }
+  .search select{
+    width:80%;
+    margin-bottom:20px;
+    margin-top:20px;
+  }
+  .search_button{
+    text-decoration: none;
+    position: absolute;
+    bottom:0;
+    width:100%;
+    text-align: center;
+    text-decoration: none;
+  }
+  .search_button a{
+    text-decoration: none;
+  }
+  .search input{
+    border-radius: 10px;
+  }
+  
+  .campsite_info{
+    background-color:rgba(223, 224, 224, 0.5);
+    background-blend-mode:lighten;
+    border:1px solid rgb(114, 129, 114);
+    width:70%;
+    height:50%;
+    margin-left:20px;
+    margin-bottom:20px;
+    width:95%;
+    font-weight: bolder;
+    border-radius: 5px;
+  }
+  .campsite_info img{
+    width:80%;
+    height:80%;
+    margin-left:15px;
+    border-radius: 10px;
+  }
+  .info{
+    text-align: right;
+    width:100%;
+  }
+  
+  .institution p{
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  .detail{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color:black;
+  }
+  .detail a{
+    font-size: 5%;
+    text-decoration: none;
+    margin-left:5px;
+  }
+  p{
+    text-align: center;
+    font-size: 5%;
+  }
+  ul{
+    display: flex;
+    list-style: none;
+    font-size: 5%;
+    flex-wrap: wrap;
+    padding:0;
+    width:100%;
+    justify-content:center;
+    font-weight: bolder;
+  }
+  .main{
+    width:80%;
+  }
+  .image{
+    text-align: center;
+    margin-top: 20px;
+  }
+  .image img{
+    width:200px;
+    height:100px;
+  } 
+  .check_button{
+    margin-top:50px;
+    width:100%;
+  }
+  .error {
+    color:red;
+  }
+  .err{
+    font-size:15px;
+  }
+  .category{
+    margin-bottom:35px;
+  }
+  
+  }
+
+

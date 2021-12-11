@@ -1,0 +1,78 @@
+.mypage_head{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.back{
+  position: absolute;  
+  left: 0; 
+  font-size: 40px;
+  text-decoration: none;
+  color:black;
+  margin-left:15px;
+}
+.user{
+  width:300px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.user_id{
+  width:300px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width:50%;
+}
+.password{
+  width:300px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width:50%;
+}
+.user_info img{
+  width:30px;
+  height:30px;
+  border-radius: 50%;
+  background-color: blue;
+}
+.user_info{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.user_info a{
+  text-decoration: none;
+  font-size: 15px;
+  position: absolute;  
+  right: 0; 
+  text-decoration: none;
+  margin-right:20px;
+}
+.quit a{
+  text-align: center;
+  color:blue;
+  border-radius: 10px;
+  font-size:20px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-decoration: none;
+}

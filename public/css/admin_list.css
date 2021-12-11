@@ -1,0 +1,39 @@
+.admin_head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back{
+  position: absolute;  
+  left: 0; 
+  font-size: 40px;
+  text-decoration: none;
+  color:black;
+  margin-left:15px;
+}
+table{
+  border-collapse: collapse;
+  width:80%; 
+  table-layout: fixed; 
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+table td{
+  background-color: #eee;
+  border:none;
+  font-size: 15px;
+}
+table tr:nth-child(odd) td{
+  background-color: #fff;
+}
+table th,tr{
+border-top:2px solid #eee;
+}
+table th {
+  text-align: left;
+  font-size: 15px;
+}

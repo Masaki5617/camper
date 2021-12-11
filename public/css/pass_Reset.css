@@ -1,0 +1,46 @@
+.passReset_head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back{
+  position: absolute;  
+  left: 0; 
+  font-size: 40px;
+  text-decoration: none;
+  color:black;
+  margin-left:15px;
+}
+.nickname{
+  width:100%;
+}
+.user_id{
+  width:100%;
+}
+.txt{
+  width:100%;
+  box-sizing: border-box;
+  height:30px;
+}
+.text p{
+  text-align: center;
+}
+.submit{
+  text-align: center;
+  width:100%;
+  margin-top:50px;
+}
+.password_Reset{
+  width:350px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.error{
+  font-size: 10px;
+  color:red;
+  text-align: center;
+}

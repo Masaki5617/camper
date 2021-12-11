@@ -1,0 +1,85 @@
+body{
+  background-color:rgba(205, 235, 245, 0.5);
+  background-blend-mode:lighten;
+  background-position:center; 
+}
+.mypage_head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:20px;
+}
+.back{
+  position: absolute;  
+  left: 0; 
+  text-decoration: none;
+  color:black;
+  margin-left:15px;
+  font-size: 40px;
+}
+.logout{
+  position: absolute;  
+  right: 0; 
+  text-decoration: none;
+  color:black;
+  margin-right:10px;
+  color:blue;
+}
+.admin{
+  width:300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.campsite_list,.user_list,.admin_list{
+  text-align: center;
+  border:1px solid black;
+  font-size: 30px;
+  margin-top:50px;
+  padding:15px;
+}
+a{
+  text-decoration: none;
+}
+.user {
+  display: inline-block;
+  position: relative;
+  border-radius: 50%;
+  background-color: #89baeb;
+  width: 1em;
+  height: 1em;
+  font-size: 30px;
+  overflow: hidden;
+}
+.user::before,
+.user::after {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-color: #3388dd;
+  content: "";
+}
+.user::before {
+  top: 0.15em;
+  width: 0.4em;
+  height: 0.4em;
+}
+.user::after {
+  bottom: -0.4em;
+  width: 0.8em;
+  height: 0.8em;
+}
+.user_info{
+  display: flex;
+  align-items: center;
+}
+.user_info img{
+  width:30px;
+  height:30px;
+  border-radius: 50%;
+  background-color: blue;
+}

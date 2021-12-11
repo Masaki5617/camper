@@ -1,0 +1,6 @@
+body{
+  background-color:rgba(192, 234, 247, 0.5);
+  background-blend-mode:lighten;
+  background-position:center; 
+  text-align: center;
+}
