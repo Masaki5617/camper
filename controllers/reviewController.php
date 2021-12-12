@@ -1,5 +1,15 @@
 <?php
  
+/**
+ * このクラスはキャンプサイト一覧表示の為にキャンプサイト情報取得を行います。
+ * 
+ * get_unique_facilities($facilities) 同じキャンプサイトIDの設備を一つにまとめる。
+ * get_unique_structures($structures) 同じキャンプサイトIDの構成を一つにまとめる。
+ */
+
+
+
+ 
 require_once(ROOT_PATH."Models/campsites.php");
 
 class campsite_list{

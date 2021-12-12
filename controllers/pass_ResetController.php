@@ -1,5 +1,15 @@
 <?php
 
+
+/**
+ * このクラスはパスワードリセットの際に確認メールを送信します。
+ * 
+ * バリデーションでエラーがなければトークンを生成しDBへ登録。
+ * 登録したトークンをURLへ格納しメール送信。
+ */
+
+
+ 
 require_once(ROOT_PATH."Models/pass_Reset.php");
 require_once(ROOT_PATH."Models/admin.php");
 require_once(ROOT_PATH."Models/register.php");
@@ -48,9 +58,9 @@ class pass_ResetController {
 
       !strstr($_SERVER["REQUEST_URI"],"admin") ? $this->register->insert_token($_POST["address"],$token) : $this->admin->admin_insert_token($_POST["address"],$token);
 
-      $body = !strstr($_SERVER["REQUEST_URI"],"admin") ? "<a href='http://localhost/campsites/pass_reset/pass_reset_form.php?token=${token}'>http://localhost/campsites/pass_reset/pass_reset_form.php?token=${token}</a>" 
+      $body = !strstr($_SERVER["REQUEST_URI"],"admin") ? "<a href='http://localhost/campsites/user/pass_reset_form.php?token=${token}'>http://localhost/campsites/user/pass_reset_form.php?token=${token}</a>" 
         
-      : "<a href='http://localhost/campsites/pass_reset/admin_pass_reset_form.php?token=${token}'>http://localhost/campsites/pass_reset/admin_pass_reset_form.php?token=${token}</a>";
+      : "<a href='http://localhost/campsites/admin/admin_pass_reset_form.php?token=${token}'>http://localhost/campsites/admin/admin_pass_reset_form.php?token=${token}</a>";
 
       mb_language("Japanese"); 
       mb_internal_encoding("UTF-8");

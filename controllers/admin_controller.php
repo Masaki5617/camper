@@ -1,5 +1,11 @@
 <?php
 
+
+/**
+ * このクラスは管理者の登録を行います。
+ */
+
+ 
 require_once(ROOT_PATH.'/Models/admin.php');
 
 class admin_controll {
@@ -54,7 +60,7 @@ public function admin_validate() {
   }
   if(count($error) == 0) {
     $_SESSION["admin"] = $_POST;
-    header("location:../complete/admin_complete.php");
+    header("location:../admin/admin_complete.php");
   }else{
     $_SESSION[""] = $_POST;
     return ["error"=>$error];

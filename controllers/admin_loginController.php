@@ -1,5 +1,13 @@
 <?php
 
+
+/**
+ * このクラスは管理者のログインを行います。
+ * 
+ * DBに登録状況が確認できればログインさせます。
+ */
+
+ 
 require_once(ROOT_PATH.'/Models/admin.php');
 
 class admin_loginControll {
@@ -21,7 +29,6 @@ class admin_loginControll {
       return $this->login_validate();
     }else if(isset($_SESSION["admin"])) {
       $_SESSION = array();
-      header("location:../login/login.php");
     }
   }
 
@@ -62,7 +69,7 @@ class admin_loginControll {
     }
     if(count($error) == 0) {
       $_SESSION["admin"] = $this->admin_get($_POST["user_id"]);
-      header("location:../mypage/admin_top.php");
+      header("location:../admin/admin_top.php");
       exit();
     }else{
       $_SESSION["form"] = $_POST;
