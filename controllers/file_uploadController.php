@@ -1,5 +1,18 @@
 <?php
 
+
+/**
+ * このクラスは管理者によるキャンプサイトの登録と編集を行います。
+ * 
+ * file_up_controll() ポスト送信でバリデーションの実行
+ * campsite_register() キャンプサイトのカテゴリーの取得（都道府県・設備・構成）
+ * edit_campsite_controll() 現在の登録内容を取得
+ * upload() キャンプサイトの登録
+ *  edit() キャンプサイトの編集
+ */
+
+
+ 
 require_once(ROOT_PATH."Models/register.php");
 require_once(ROOT_PATH."Models/campsites.php");
 require_once(ROOT_PATH."controllers/reviewController.php");
@@ -94,7 +107,7 @@ class file_up{
     if(count($err) == 0 && move_uploaded_file($tmp_path, $save_path)) {
        !isset($this->request["post"]["id"]) ? $this->upload($save_filename) :
       $this->edit($save_filename);
-        header("location:../list/campsite_list.php");
+        header("location:../campsite/campsite_list.php");
       }else{
       $_SESSION["form"] = $_POST;
       return ["err"=>$err];

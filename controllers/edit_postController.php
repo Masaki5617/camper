@@ -1,5 +1,11 @@
 <?php
 
+
+/**
+ * このクラスはユーザーの口コミの編集をおこないます。
+ * 
+ */
+
 require_once(ROOT_PATH.'/Models/post.php');
 
 class edit_postController {
@@ -36,7 +42,7 @@ class edit_postController {
     if(count($err) == 0 ) {
       $_SESSION["post"] = $_POST;
       $this->post_update_controll();
-      header("location:../complete/post_update_complete.php");
+      header("location:../post/post_update_complete.php");
     }else{
       $_SESSION["post"] = $_POST;
       return ["err"=>$err];

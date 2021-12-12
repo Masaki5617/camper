@@ -1,10 +1,18 @@
 <?php
 
+
+/**
+ * このクラスはユーザーの会員登録を行います。
+ * 
+ */
+
+
+
 require_once(ROOT_PATH.'/Models/Login.php');
 require_once(ROOT_PATH.'/Models/register.php');
 
 class registerController {
-  private $Register;
+  private $register;
 
   public function __construct() {
     $this->request["post"] = $_POST;
@@ -46,7 +54,7 @@ class registerController {
     }
     if(count($error) == 0) {
       $_SESSION["form"] = $_POST;
-      header("location:../../campsites/complete/complete.php");
+      header("location:complete.php");
     }else{
       $_SESSION["form"] = $_POST;
       return ["error"=>$error];

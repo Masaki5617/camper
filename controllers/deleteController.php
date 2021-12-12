@@ -1,5 +1,13 @@
 <?php
 
+
+/**
+ * このクラスは管理者がキャンプサイトの削除を行います。
+ * 
+ * キャンプサイトのIDをGETで送り、該当するキャンプサイトを削除
+ */
+
+ 
 require_once(ROOT_PATH.'/Models/post.php');
 require_once(ROOT_PATH.'/Models/campsites.php');
 
