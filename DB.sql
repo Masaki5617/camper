@@ -45,7 +45,7 @@ CREATE TABLE `campsites` (
 --
 
 INSERT INTO `campsites` (`id`, `name`, `image`, `prefecture_id`, `created_at`, `updated_at`, `address`, `tel`, `buisiness_hours`, `url`) VALUES
-(213, '菅野将輝', '2021121213081320211129000527article_pc_pixta_35656212_M.jpg', 2, '2021-12-12 13:08:13', '2021-12-12 13:08:13', '千葉県習志野市東習志野', 08013016674, '11:00〜19:00', 'www.humotonohara.autocamp.co.jp');
+(213, '鹿屋の里キャンプ場', '2021121218082720211129000527article_pc_pixta_35656212_M.jpg', 46, '2021-12-12 13:08:13', '2021-12-12 18:08:27', '鹿児島県鹿屋市寿1-1-1', 08012345678, '11:00〜19:00', 'www.humotonohara.autocamp.co.jp');
 
 -- --------------------------------------------------------
 
@@ -64,7 +64,7 @@ CREATE TABLE `camp_facilities` (
 --
 
 INSERT INTO `camp_facilities` (`id`, `campsite_id`, `facility_id`) VALUES
-(342, 213, 1);
+(343, 213, 1);
 
 -- --------------------------------------------------------
 
@@ -83,7 +83,7 @@ CREATE TABLE `camp_structures` (
 --
 
 INSERT INTO `camp_structures` (`id`, `campsite_id`, `structure_id`) VALUES
-(245, 213, 1);
+(246, 213, 1);
 
 -- --------------------------------------------------------
 
