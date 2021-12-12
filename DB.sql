@@ -1,4 +1,3 @@
---
 -- データベース: `campsite`
 --
 
@@ -20,7 +19,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `email`, `password`, `token`) VALUES
-(22, 's.masaki.8888@gmail.com', '$2y$10$Izf46SWgykt/DxJK6mnSPegu4XiaTwvNTgJadq83Sk004lMCwE3Q2', NULL);
+(23, 'test.8888@gmail.com', '$2y$10$n/HFPPYdirF8GDiMDnUfbenynPm2gnDwPho1nZs1asBgcbUnFsDh.', NULL);
 
 -- --------------------------------------------------------
 
@@ -46,7 +45,7 @@ CREATE TABLE `campsites` (
 --
 
 INSERT INTO `campsites` (`id`, `name`, `image`, `prefecture_id`, `created_at`, `updated_at`, `address`, `tel`, `buisiness_hours`, `url`) VALUES
-(208, '菅野将輝', '20211207003651cafe2.jpg', 2, '2021-12-07 00:36:51', '2021-12-07 00:36:51', '千葉県習志野市東習志野', 08013016674, '11:00〜19:00', 'www.humotonohara.autocamp.ca.jp');
+(213, '菅野将輝', '2021121213081320211129000527article_pc_pixta_35656212_M.jpg', 2, '2021-12-12 13:08:13', '2021-12-12 13:08:13', '千葉県習志野市東習志野', 08013016674, '11:00〜19:00', 'www.humotonohara.autocamp.co.jp');
 
 -- --------------------------------------------------------
 
@@ -65,7 +64,7 @@ CREATE TABLE `camp_facilities` (
 --
 
 INSERT INTO `camp_facilities` (`id`, `campsite_id`, `facility_id`) VALUES
-(332, 208, 1);
+(342, 213, 1);
 
 -- --------------------------------------------------------
 
@@ -84,7 +83,7 @@ CREATE TABLE `camp_structures` (
 --
 
 INSERT INTO `camp_structures` (`id`, `campsite_id`, `structure_id`) VALUES
-(235, 208, 1);
+(245, 213, 1);
 
 -- --------------------------------------------------------
 
@@ -118,14 +117,6 @@ CREATE TABLE `favorite` (
   `user_id` int(50) NOT NULL,
   `campsite_id` int(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- テーブルのデータのダンプ `favorite`
---
-
-INSERT INTO `favorite` (`id`, `user_id`, `campsite_id`) VALUES
-(51, 28, 195),
-(55, 28, 194);
 
 -- --------------------------------------------------------
 
@@ -171,13 +162,6 @@ CREATE TABLE `posts` (
   `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- テーブルのデータのダンプ `posts`
---
-
-INSERT INTO `posts` (`id`, `user_id`, `campsite_id`, `title`, `review`, `score`, `created_at`, `updated_at`) VALUES
-(167, 29, 194, '評価', 'あまり面白くなかった。', 1, '2021-12-02 11:46:38', '2021-12-02 11:46:38');
 
 -- --------------------------------------------------------
 
@@ -297,6 +281,4 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `image`, `created_at`, `updated_at`, `token`) VALUES
-(28, 'マック', 'm.sugano.1357@gmail.com', '$2y$10$K8GZ9crUgh04MC364l7VeeedZFgZx5s.iUAou.bM8B3o2h1VWW0im', NULL, '2021-11-29 20:47:46', '2021-11-29 20:47:46', '3aed6b742b96236068c0ff9452852fca');
-
---
+(30, 'テスト', 'test.1111@gmail.com', '$2y$10$SjOIyaSYB27tI.7nMWoPPu/OLle7zfBs54SlkVQyLwS15p7YiHAz6', NULL, '2021-12-08 23:32:51', '2021-12-08 23:32:51', NULL);
