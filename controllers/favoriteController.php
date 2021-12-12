@@ -1,5 +1,15 @@
 <?php
 
+
+/**
+ * このクラスはユーザーのお気に入り登録を行います。
+ * 
+ * ハートボタンクリックでモデルのfavoriteテーブルへユーザーIDとキャンプサイトIDを登録。
+ */
+
+
+
+ 
 require_once(ROOT_PATH."Models/favorite.php");
 
 class favoriteController {

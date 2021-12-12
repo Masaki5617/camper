@@ -1,5 +1,15 @@
 <?php
 
+
+/**
+ * このクラスは一般ユーザーのログインを行います。
+ * 
+ * バリデーションでエラーがなければhome.phpへ遷移。
+ */
+
+
+
+ 
 require_once(ROOT_PATH.'/Models/Login.php');
 
 class loginController {
@@ -15,7 +25,7 @@ class loginController {
       return $this->login_validate();
     }else if(isset($_SESSION["form"])) {
       $_SESSION = array();
-      header("location:../login/login.php");
+      header("location:login.php");
     }
   }
 
@@ -46,7 +56,7 @@ class loginController {
     }
     if(count($error) == 0) {
       $_SESSION["form"] = $this->users_get($_POST["user_id"]);
-      header("location:../home/home.php");
+      header("location:../home.php");
       exit();
     }else{
       $_SESSION["form"] = $_POST;

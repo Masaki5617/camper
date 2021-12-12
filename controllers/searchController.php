@@ -1,5 +1,14 @@
 <?php
 
+
+/**
+ * このクラスはキャンプサイトの検索を行います。
+ * 
+ *  search() 検索結果を取得。
+ */
+
+
+
 require_once(ROOT_PATH."Models/campsites.php");
 require_once(ROOT_PATH."controllers/reviewController.php");
 

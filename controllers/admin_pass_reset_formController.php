@@ -1,5 +1,11 @@
 <?php
 
+
+/**
+ * このクラスは管理者のパスワードリセットの際の登録状況確認を行います。
+ */
+
+
 require_once(ROOT_PATH."Models/admin.php");
 require_once(ROOT_PATH."Models/register.php");
 

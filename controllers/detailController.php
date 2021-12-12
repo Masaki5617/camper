@@ -1,5 +1,14 @@
 <?php
 
+
+/**
+ * このクラスはキャンプサイトの詳細情報を取得します。
+ * 
+ * キャンプサイトのIDをGETで送信し、該当のキャンプサイトの詳細を取得。
+ */
+
+
+ 
 require_once(ROOT_PATH.'/Models/campsites.php');
 
 class detailController {

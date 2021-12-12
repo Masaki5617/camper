@@ -1,5 +1,13 @@
 <?php
 
+
+/**
+ * このクラスはユーザーの口コミ内容の投稿、取得を行います。
+ * 
+ */
+
+
+ 
 require_once(ROOT_PATH.'/Models/post.php');
 
 class postController {
@@ -50,7 +58,7 @@ class postController {
     if(count($err) == 0 ) {
       $_SESSION["post"] = $_POST;
       $this->post_insert();
-      header("location:../../campsites/complete/post_complete.php");
+      header("location:../post/post_complete.php");
     }else{
       $_SESSION["post"] = $_POST;
       return ["err"=>$err];

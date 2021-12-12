@@ -1,5 +1,14 @@
 <?php
 
+
+/**
+ * このクラスはパスワードリセットをおこないます。
+ * 
+ */
+
+
+ 
+
 require_once(ROOT_PATH."Models/pass_reset_form.php");
 require_once(ROOT_PATH."Models/register.php");
 
@@ -47,7 +56,7 @@ class reset_form_controll{
     }
     if(count($error) == 0 ) {
       $this->reset->update($_POST);
-      header("location:../../campsites/complete/reset_complete.php");
+      header("location:../user/reset_complete.php");
     }else{
       return ["error"=>$error];
     }
